@@ -1,13 +1,13 @@
-import React from "react";
+import React, {useEffect} from "react";
 import BACKEND_URL_Birthdays from '../../libs/config';
 
-function BirthdayPage() {
+function BirthdayPage({dispatch}) {
 
 useEffect(() => {
     async function getBirthdays(){
         let response = await fetch(`${BACKEND_URL_Birthdays}`);
         let data = await response.json();
-        dispatchEvent({type: "BIRTHDAYS", payload: data});
+        dispatch({type: "BIRTHDAYS", payload: data});
         console.log(data);
     }
     getBirthdays();
@@ -16,7 +16,7 @@ useEffect(() => {
     return (
          <div class="container">
             <h2> Find your birthday month buddies!</h2>
-            {/* <!-- classes on buttons for css --> */}
+            
             <button class="btn month small rotate-left">January</button>
             <button class="btn month">February</button>
             <button class="btn month big rotate-left">March</button>
@@ -30,7 +30,7 @@ useEffect(() => {
             <button class="btn month rotate-left">November</button>
             <button class="btn month big">December</button>
         <ul class="birthday-buddies">
-            {/* <!-- This list will store data returned from GET request to API --> */}
+            
         </ul>
     </div>
     )

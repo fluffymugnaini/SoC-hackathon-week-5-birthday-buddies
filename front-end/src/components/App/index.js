@@ -2,6 +2,7 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import React, { useReducer, useState } from "react";
 import HomePage from '../HomePage';
+import BirthdayPage from '../BirthdayPage';
 import reducer, { INITIAL_BIRTHDAYS } from '../../libs/birthdayReducer';
 
 
@@ -23,7 +24,9 @@ const [birthday, dispatch] = useReducer(reducer, INITIAL_BIRTHDAYS)
           </ul>
         </nav>
         <Switch>
-          <Route path="/birthdays"></Route>
+          <Route path="/birthdays">
+            <BirthdayPage dispatch={dispatch}/>
+          </Route>
           <Route path="/">
             <HomePage/>
           </Route>
