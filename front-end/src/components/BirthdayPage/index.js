@@ -1,14 +1,14 @@
 import React, {useEffect} from "react";
 import BACKEND_URL_Birthdays from '../../libs/config';
 
-function BirthdayPage({dispatch}) {
+function BirthdayPage({dispatch, birthday}) {
 
 useEffect(() => {
     async function getBirthdays(){
         let response = await fetch(`${BACKEND_URL_Birthdays}`);
         let data = await response.json();
-        dispatch({type: "BIRTHDAYS", payload: data});
-        console.log(data);
+        await dispatch({type: "BIRTHDAYS", payload: data});
+        console.log(birthday);
     }
     getBirthdays();
 }, []);
@@ -30,7 +30,9 @@ useEffect(() => {
             <button class="btn month rotate-left">November</button>
             <button class="btn month big">December</button>
         <ul class="birthday-buddies">
-            
+            {/* { birthday && (
+                birthday.map(person => <li>{person.fullName}</li>)
+    )} */}
         </ul>
     </div>
     )

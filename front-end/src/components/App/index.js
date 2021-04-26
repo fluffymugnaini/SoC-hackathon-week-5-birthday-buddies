@@ -25,7 +25,7 @@ const [birthday, dispatch] = useReducer(reducer, INITIAL_BIRTHDAYS)
         </nav>
         <Switch>
           <Route path="/birthdays">
-            <BirthdayPage dispatch={dispatch}/>
+            <BirthdayPage dispatch={dispatch} birthday={birthday}/>
           </Route>
           <Route path="/">
             <HomePage/>
