@@ -1,0 +1,36 @@
+.btn {
+    background-color: yellow;
+    border: none;
+    border-radius: 50% 50%;
+    box-shadow: 0px 0px 20px 5px var(--form-bg);
+    font-size: 30px;
+    color: var(--black);
+    margin-bottom: 50px;
+    opacity: 0.8;
+    padding: 5px 10px;
+    transform: rotate(5deg);
+    transition: .5s all;
+    }
+/* makes some 'stars' look different */
+.big {
+    transform: scale(2);
+}
+.small {
+    transform: scale(0.5);
+}
+.rotate-left {
+    transform: rotate(-10deg);
+}
+.rotate-right{
+    transform: rotate(10deg);
+}
+
+.btn:hover,
+.btn:focus {
+    box-shadow: none;
+    cursor: pointer;
+    font-weight: bold;
+    opacity: 1;
+    outline: none;
+    transform: scale(1.1);
+}

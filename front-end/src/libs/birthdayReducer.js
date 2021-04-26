@@ -1,4 +1,4 @@
-export const INITIAL_BIRTHDAYS = {};
+export const INITIAL_BIRTHDAYS = null;
 
 function reducer(state,action) {
     switch (action.type) {
