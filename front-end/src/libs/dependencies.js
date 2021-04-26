@@ -1,6 +1,6 @@
-const BACKEND_URL_Birthdays = 'https://birthdays-cohort-5.herokuapp.com/users';
+export const BACKEND_URL_Birthdays = 'https://birthdays-cohort-5.herokuapp.com/users';
 
-const months = [
+export const months = [
   'January',
   'February',
   'March',
@@ -15,7 +15,7 @@ const months = [
   'December',
 ];
 
-const getRandomButtonClasses = () => {
+export const getRandomButtonClasses = () => {
   const classes = [];
   //random size
   classes.push(Math.random() >= 0.5 ? 'big' : 'small');
@@ -25,4 +25,3 @@ const getRandomButtonClasses = () => {
   return classes.join(" ");
 };
 
-export { BACKEND_URL_Birthdays, months, getRandomButtonClasses };
