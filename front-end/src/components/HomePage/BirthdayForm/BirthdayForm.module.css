@@ -1,0 +1,47 @@
+form {
+    color: var(--white);
+    font-size: 30px;
+    margin-top: 70px;
+}
+input, button, select {
+    font-size: inherit;
+    font-family: inherit;
+    color: var(--yellow);
+}
+
+input, 
+select {
+    background: var(--form-bg);
+    border-bottom: 1px solid var(--yellow);
+    border: none;
+    font-weight: bold;
+    margin-bottom: 10px;
+    outline: none;
+    text-align: right;
+}
+input:focus{
+    border-bottom: 1px solid var(--blue);
+}
+select{
+    color: var(--yellow);
+    padding: 5px 10px;
+}
+
+form button {
+    background: var(--yellow);
+    border-radius: 20% 40%;
+    border: 2px solid black;
+    box-shadow: 2px 5px 10px 5px var(--form-bg);
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 30px auto;
+    padding: 10px 20px;
+    transition: .5s all;
+    color: black;
+}
+
+form button:hover {
+    border-radius: 40% 20%;
+    box-shadow: none;
+}
