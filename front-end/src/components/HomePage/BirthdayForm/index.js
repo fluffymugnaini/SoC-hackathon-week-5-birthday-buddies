@@ -1,19 +1,19 @@
 import React, { useState } from 'react';
-import { months, BACKEND_URL_Birthdays } from '../../../libs/dependencies';
-import css from './BirthdayForm.module.css';
+import { Link } from 'react-router-dom';
+import { BACKEND_URL_Birthdays, months } from '../../../libs/dependencies';
 
 function BirthdayForm() {
   const [birthdayInfo, setBirthdayInfo] = useState({});
 
- async function postUser() {
-   const res = await fetch(`${BACKEND_URL_Birthdays}`, {
-     method: "POST",
-     headers: {
-       "content-type": "application/json",
-     },
-     body: JSON.stringify(birthdayInfo), //turns body object into json
-   });
- }
+  async function postUser() {
+    await fetch(`${BACKEND_URL_Birthdays}`, {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json',
+      },
+      body: JSON.stringify(birthdayInfo), //turns body object into json
+    });
+  }
 
   const onChange = (e, field) =>
     setBirthdayInfo({ ...birthdayInfo, [field]: e.target.value });
@@ -45,9 +45,12 @@ function BirthdayForm() {
           {months.map((month, i) => <option>{month}</option>)}
         </select>
       </label>
-      <button type='submit' id='submit-button' onClick={postUser}>
-        Submit
-      </button>
+
+      <Link to='/birthdays'>
+        <button className="btn" type='submit' id='submit-button' onClick={postUser}>
+          Submit
+        </button>
+      </Link>
     </form>
   );
 }

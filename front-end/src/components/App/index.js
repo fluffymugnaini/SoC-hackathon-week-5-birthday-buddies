@@ -13,7 +13,7 @@ const [birthday, dispatch] = useReducer(reducer, INITIAL_BIRTHDAYS)
   return (
     <Router>
       <div className="App">
-        <nav>
+        <nav className="nav-bar">
           <ul>
             <li>
               <Link to="/">HOME PAGE</Link>

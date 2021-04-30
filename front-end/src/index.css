@@ -14,3 +14,22 @@ body, html {
     background-color: #0f0f0f;
     font-family: 'Amatic SC', cursive;
 }
+
+.btn {
+    background: var(--yellow);
+    border-radius: 20% 40%;
+    border: 2px solid black;
+    box-shadow: 2px 5px 10px 5px var(--form-bg);
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 30px auto;
+    padding: 10px 20px;
+    transition: .5s all;
+    color: black;
+}
+
+.btn:hover {
+    border-radius: 40% 20%;
+    box-shadow: none;
+}
