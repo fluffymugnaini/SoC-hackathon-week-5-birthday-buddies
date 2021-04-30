@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import dateFormat from '../../libs/dateFormat';
 import { BACKEND_URL_Birthdays, months } from '../../libs/dependencies';
 import Button from '../MonthButton';
+import css from './BirthdayPage.module.css';
 
 function BirthdayPage({ dispatch, birthday }) {
   const [currentMonth, setCurrentMonth] = useState('');
@@ -20,16 +21,22 @@ function BirthdayPage({ dispatch, birthday }) {
   );
 
   return (
-    <div class='container'>
-      <h2> Find your birthday month buddies!</h2>
-      {months.map((month, i) => (
-        <Button key={i} month={month} setCurrentMonth={setCurrentMonth} />
-      ))}
-      <ul class='birthday-buddies'>
+    <div className={css.container}>
+      <div className={css.headingAndButton}>
+        <h2> Find your birthday month buddies!</h2>
+        {months.map((month, i) => (
+          <Button key={i} month={month} setCurrentMonth={setCurrentMonth} />
+        ))}
+      </div>
+      <ul className={css.birthdayBuddiesList}>
         {birthday &&
           birthday.map((person) => (
-            <li>
-              {person.fullName} {dateFormat(person.day)} of {person.month}
+            <li className={css.items}>
+              {person.fullName}{" "}
+              <span className={css.birthday}>
+                {" "}
+                {dateFormat(person.day)} of {person.month}{" "}
+              </span>
             </li>
           ))}
       </ul>
