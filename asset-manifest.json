@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/SoC-hackathon-week-5-birthday-buddies/static/css/main.0565f177.chunk.css",
+    "main.js": "/SoC-hackathon-week-5-birthday-buddies/static/js/main.3be53500.chunk.js",
+    "main.js.map": "/SoC-hackathon-week-5-birthday-buddies/static/js/main.3be53500.chunk.js.map",
+    "runtime-main.js": "/SoC-hackathon-week-5-birthday-buddies/static/js/runtime-main.35aa365e.js",
+    "runtime-main.js.map": "/SoC-hackathon-week-5-birthday-buddies/static/js/runtime-main.35aa365e.js.map",
+    "static/js/2.dd42bfce.chunk.js": "/SoC-hackathon-week-5-birthday-buddies/static/js/2.dd42bfce.chunk.js",
+    "static/js/2.dd42bfce.chunk.js.map": "/SoC-hackathon-week-5-birthday-buddies/static/js/2.dd42bfce.chunk.js.map",
+    "static/js/3.b3660923.chunk.js": "/SoC-hackathon-week-5-birthday-buddies/static/js/3.b3660923.chunk.js",
+    "static/js/3.b3660923.chunk.js.map": "/SoC-hackathon-week-5-birthday-buddies/static/js/3.b3660923.chunk.js.map",
+    "index.html": "/SoC-hackathon-week-5-birthday-buddies/index.html",
+    "static/css/main.0565f177.chunk.css.map": "/SoC-hackathon-week-5-birthday-buddies/static/css/main.0565f177.chunk.css.map",
+    "static/js/2.dd42bfce.chunk.js.LICENSE.txt": "/SoC-hackathon-week-5-birthday-buddies/static/js/2.dd42bfce.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.35aa365e.js",
+    "static/js/2.dd42bfce.chunk.js",
+    "static/css/main.0565f177.chunk.css",
+    "static/js/main.3be53500.chunk.js"
+  ]
+}
