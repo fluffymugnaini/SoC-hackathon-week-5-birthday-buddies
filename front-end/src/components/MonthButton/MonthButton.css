@@ -1,9 +1,9 @@
 .month-btn {
-    background-color: yellow;
+    background-color: var(--yellow);
     border: none;
     border-radius: 50% 50%;
     box-shadow: 0px 0px 20px 5px var(--form-bg);
-    font-size: 30px;
+    font-size: 50px;
     color: var(--black);
     margin-bottom: 50px;
     opacity: 0.8;
@@ -13,16 +13,18 @@
     }
 /* makes some 'stars' look different */
 .big {
-    transform: scale(2);
+    border: solid var(--yellow) 20px;
+   
 }
 .small {
-    transform: scale(0.5);
+    border: dotted white 5px;
+
 }
 .rotate-left {
     transform: rotate(-10deg);
 }
 .rotate-right{
-    transform: rotate(10deg);
+    transform: rotate(20deg);
 }
 
 .month-btn:hover,
