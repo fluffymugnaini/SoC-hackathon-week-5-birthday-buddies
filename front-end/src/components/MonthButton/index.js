@@ -4,9 +4,9 @@ import './MonthButton.css';
 function MonthButton({ month, setCurrentMonth }) {
   const randomClassList = getRandomButtonClasses();
   const onClick = () => setCurrentMonth(month);
-
+  console.log(randomClassList)
   return (
-    <button className={`btn ${randomClassList}`} onClick={onClick}>
+    <button className={`month-btn ${randomClassList}`} onClick={onClick}>
       {month}
     </button>
   );

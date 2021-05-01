@@ -1,4 +1,4 @@
-.btn {
+.month-btn {
     background-color: yellow;
     border: none;
     border-radius: 50% 50%;
@@ -25,8 +25,8 @@
     transform: rotate(10deg);
 }
 
-.btn:hover,
-.btn:focus {
+.month-btn:hover,
+.month-btn:focus {
     box-shadow: none;
     cursor: pointer;
     font-weight: bold;

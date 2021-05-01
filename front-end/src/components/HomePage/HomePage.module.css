@@ -16,16 +16,3 @@
     border-radius: 10px 10px;
     padding: 20px;
 }
-
-h1 {
-    color: #F8DC81;
-    font-family: 'Architects Daughter', cursive;
-    font-size: 100px;
-    font-weight: bold;
-    line-height: .9;
-}
-
-h2 {
-    color: var(--blue);
-    font-size: 50px;
-}

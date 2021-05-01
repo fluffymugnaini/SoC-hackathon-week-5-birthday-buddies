@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { BACKEND_URL_Birthdays, months } from '../../../libs/dependencies';
+import { form } from './BirthdayForm.module.css';
 
 function BirthdayForm() {
   const [birthdayInfo, setBirthdayInfo] = useState({});
@@ -19,7 +20,7 @@ function BirthdayForm() {
     setBirthdayInfo({ ...birthdayInfo, [field]: e.target.value });
 
   return (
-    <form id='input-form'>
+    <form id='input-form' className={form}>
       <label>
         Enter name:
         <input
@@ -46,11 +47,14 @@ function BirthdayForm() {
         </select>
       </label>
 
-      <Link to='/birthdays'>
-        <button className="btn" type='submit' id='submit-button' onClick={postUser}>
-          Submit
-        </button>
-      </Link>
+      <button
+        className='btn'
+        type='submit'
+        id='submit-button'
+        onClick={postUser}
+      >
+        <Link to='/birthdays'>Submit</Link>
+      </button>
     </form>
   );
 }
